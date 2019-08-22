@@ -159,6 +159,8 @@ def name_lookup(number)
     end
   end
 end
+
+name_lookup(8)
    
 def team_colors(name)
   game_hash.each do |home_away, team_info|

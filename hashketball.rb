@@ -130,6 +130,10 @@ def num_points_scored(name)
     end
   end
 end
+
+def lookup(key, value, result)
+  
+end
  
 def shoe_size(name)
   game_hash.each do |home_away, team_info|

@@ -149,6 +149,7 @@ def name_lookup(number)
   game_hash.each do |home_away, team_info|
     #binding.pry
     team_info[:players].each do |player|
+      binding.pry
       if player[:number] == number
         return player[:player_name]
       end

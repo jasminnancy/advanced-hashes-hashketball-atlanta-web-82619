@@ -151,7 +151,7 @@ def name_lookup(number)
     team_info[:players].each do |player|
       binding.pry
       if player[:number] == number
-        return player[:player_name]
+        p player[:player_name]
       end
     end
   end

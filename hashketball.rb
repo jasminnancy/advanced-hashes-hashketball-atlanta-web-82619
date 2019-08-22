@@ -156,7 +156,7 @@ def shoe_size(name)
 end
 
 def name_lookup(number)
-  lookup(key, value, result)
+  lookup(:number, number, :player_name)
 end
 
 name_lookup(8)

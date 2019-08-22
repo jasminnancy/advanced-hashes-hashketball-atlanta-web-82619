@@ -142,18 +142,10 @@ def lookup(key, value, result)
 end
  
 def shoe_size(name)
-  game_hash.each do |home_away, team_info|
-    team_info.each do |info, data|
-      if info == :players
-        data.each do |player|
-          if player[:player_name] == name
-            return player[:shoe]
-          end
-        end
-      end
-    end
-  end
+  lookup(:player_name, name, :shoe)
 end
+
+shoe_size("Ben Gordon")
 
 def name_lookup(number)
   lookup(:number, number, :player_name)
